@@ -3,32 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index-style.css">
-    <title>Wallisy Web</title>
-    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="creations.html">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+         $(function () {
+             $('[data-toggle="popover"]').popover()
+         })
+    </script>
+    <script>
+         $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+
+    <title>Lee Jun Ze</title>
 </head>
 <body>
-    <div class="topnav">
+    <div class="title" id="title">
+        <div class="nav-parent">
+            <div class="topnav">
+                <ul>
+                    <li><a onClick="document.getElementById('about').scrollIntoView();">About</a></li>
+                    <li><a onClick="document.getElementById('stats').scrollIntoView();">Stats</a></li>
+                    <li><a onClick="document.getElementById('departments').scrollIntoView();">Departments</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <br>
+
         <ul>
-            <li><a onClick="document.getElementById('about').scrollIntoView();">About</a></li>
-            <li><a href="">News</a></li>
-            <li><a href="">Departments</a></li>
-            <li><a href="">Informations</a></li>
+            <img src="simple_gold_crown.png" style="width: 20%; padding-left: 15px; padding-bottom: -2000px;" alt="">
+            <h1>Welcome to the</h1>
+            <h1>Wallisy Web</h1>
         </ul>
+        <br>
+        <hr>
     </div>
-    <br>
-    <div class="hero-wallisy">
-        <h1>Welcome to the</h1>
-        <h1>Wallisy Web</h1>
+
+    <!--About-->
+    <div class="about" id="about">
+        <h2>About Wallisy</h2>
+        <ul>
+            <p>Welcome to the official website of Wallisy, 
+                a fictional country ruled by a duke and known 
+                for its prosperous development across various sectors. 
+                Despite its imaginary status, Wallisy boasts a well-organized 
+                administration with departments dedicated to Finance, Health, Manpower, and more.
+            </p>
+        </ul>
     </div>
     <hr>
-    <div class="about" id="about">
-        <ul>
-            <h1><b>About</b></h1>
-            <p style="font-size: 30px;">Wallisy is a nation situated within the oceans of 
-            the world and its purpose is to just create a country, 
-            be it real of fake.</p>
+
+    <!--Stats-->
+    <div class="stats" id="stats">
+        <h2>Statistics</h2>
+        <ul style="list-style-type:circle;">
+            <li>Members | <i>38</i></li>
+            <br>
+            <li>Departments | <i>13</i></li>
         </ul>
     </div>
+
+    <hr>
+    
+    </div>
+    <div class="departments" id="departments">
+        <ul>
+            <img src="simple_gold_crown.png" style="width: 20%; padding-left: 15px; padding-bottom: -200px;" alt="">
+            <div class="container">
+                <h2>Grand Duke of Wallisy</h2>
+                <ul>
+                    <h3>Remy Kimpton</h3>
+                </ul>
+            </div>
+        </ul>
+        <hr>
+        <h1><b>Departments</b></h1>
+        <div class="dept-column1">
+            <ul>
+                <h2><u>Department of Law</u></h2>
+                <ul>
+                    <h3>Divisions:</h3>
+                    <li>Attorney-General's Chamber's</li>
+                    <li>Legal Aid Burean</li>
+                    <li>Wallisy Investigation Agency</li>
+                    <li>Wallisy Attorney</li>
+                    <li>Burean of Prisons</li>
+                    <li>Anti-Corruption Agency</li>
+                </ul>
+            </ul>
+        </div>
+        <div class="dept-column2"></div>
+            <ul>
+                <h2><u>Department of Finance</u></h2>
+                <ul style="float: left; text-align: left;">
+                    <h3>Divisions:</h3>
+                    <li>Inland Income Authority of Wallisy</li>
+                    <li>Monetory Authority of Wallisy</li>
+                    <li>Agency for the Integrated Care</li>
+                    <li>Wallisy Mint</li>
+                    <li>Bureau of Engraris and Printing</li>
+                </ul>
+            </ul>
+        </div>
+        <div class="dept-column3">
+            <ul>
+                <h2><u>Department of Health</u></h2>
+                <ul>
+                    <h3>Divisions:</h3>
+                    <li>Health Promotion Board</li>
+                    <li>Wallisy General Hospitals</li>
+                    <li>Health Sciences Authority</li>
+                    <li>Centre for Deseases Control and Protection</li>
+                </ul>
+            </ul>
+        </div>
+        <div class="dept-column4">
+            <ul>
+                <h2><u>Department of Defense</u></h2>
+                <ul style="float: left; text-align: left;">
+                    <h3>Divisions:</h3>
+                    <li>Wallisy Army</li>
+                    <li>Wallisy Navy</li>
+                    <li>Wallisy Air Force</li>
+                    <li>Wallisy Defense Science and Tech Agency</li>
+                    <li>Wallisy Weaponary Administration</li>
+                </ul>
+            </ul>
+        </div>
+    </div>
+    </div>
+    <ul class="back-to-top">
+        <li><a onClick="document.getElementById('title').scrollIntoView();">Back to Top ^</a></li>
+    </ul>
+
+    <div class="footer">
+        <p><i>Made using HTML and CSS, by Lee Jun Ze</i></p>
+    </div>
+
 </body>
 </html>
