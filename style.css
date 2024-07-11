@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
 * {
-    font-family: "Poppins", sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     box-sizing: border-box;
     color: white;
 }
@@ -14,7 +14,7 @@ body {
     /* overflow: hidden; */
     padding-left: 30px;
     padding-right: 20px;
-    background-color: #000000;
+    background-color: #03071e;
 }
 
 h1 {
@@ -201,4 +201,11 @@ a {
     float: right;
     padding-bottom: 20px;
     text-align: left;
+}
+
+.dept-column1, .dept-column2, .dept-column3, .dept-column4 {
+    background-color: #540b0e;
+    margin-right: 775px;
+    padding-bottom: 20px;
+    border-radius: 20px;
 }
